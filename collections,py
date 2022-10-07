@@ -1,0 +1,24 @@
+collections are counter ,namedtuple ,ordereddict, defaultdict, deque
+
+from collections import namedtuple
+c = namedtuple('tinku',"x,y,z")
+n1=c(10,20.2345,-23.45)
+print(n1)
+
+>>tinku(x=10 ,y=20.2345 ,z=-23.45)
+
+from collections import Counter
+my_counter="tinku"
+c=Counter(my_counter)
+print(c)
+print(c.most_common(2))
+
+>>Counter({'t':1,'i':1,'n':1,'k':1,'u':1})
+[('t':1),('i':1)]
+
+deque:it has
+appendleft()
+extendleft()
+popleft()
+clear()
+rotate()
